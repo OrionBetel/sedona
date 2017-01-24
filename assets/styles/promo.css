@@ -1,0 +1,22 @@
+.promo {
+  padding-top: 4.708333%;
+  padding-bottom: 4.41666%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.promo__heading {
+  margin: 0 auto;
+  padding-bottom: 2.375%;
+  width: 42.5%;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.promo__content {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 26px;
+}

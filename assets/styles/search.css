@@ -1,0 +1,24 @@
+.search {
+  position: relative;
+  z-index: 1;
+  padding-top: 4.583%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.search__heading {
+  margin: 0;
+  padding-bottom: 2.416%;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.search__content {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 4.083%;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+}

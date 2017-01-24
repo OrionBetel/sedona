@@ -1,0 +1,6 @@
+.jumbotron {
+  height: 508px;
+  background: url(../images/header-overlay.png) no-repeat bottom,
+              url(../images/header-text.png) no-repeat center,
+              url(../images/header-bg.png) center -56px #fff;
+}

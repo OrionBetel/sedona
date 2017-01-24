@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <script src="https://use.fontawesome.com/cee97f6a5a.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Sedona | Hotels</title>
+</head>
+<body class="body">
+  <div class="container">
+    <header class="header">
+      <a class="logo header__logo" href="index.html">
+        <img src="img/logo.png" alt="sedona logo" width="138" height="70">
+      </a>
+
+      <nav>
+        <ul class="menu clearfix">
+          <li class="menu__item menu__item_pull_left">
+            <a class="menu__link" href="#">Информация</a>
+          </li>
+          <li class="menu__item menu__item_pull_left menu__item_sm_right">
+            <a class="menu__link" href="#">Фото и видео</a>
+          </li>
+          <li class="menu__item menu__item_pull_right">
+            <a class="menu__link menu__link_active" href="hotels.html">Гостиницы</a>
+          </li>
+          <li class="menu__item menu__item_pull_right menu__item_sm_left">
+            <a class="menu__link" href="#">Карта штата</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="filter clearfix" action="#" method="post">
+      <div class="filter__set">
+        <h3 class="filter__heading">Инфраструктура:</h3>
+
+        <input class="filter__checkbox" type="checkbox" id="pool">
+        <label class="filter__label_checkbox" for="pool">Бассейн</label>
+
+        <input class="filter__checkbox" type="checkbox" id="parking" checked>
+        <label class="filter__label_checkbox" for="parking">Парковка</label>
+
+        <input class="filter__checkbox" type="checkbox" id="wi-fi" disabled checked>
+        <label class="filter__label_checkbox" for="wi-fi">Wi-Fi</label>
+      </div>
+
+      <div class="filter__set">
+        <h3 class="filter__heading">Тип жилья:</h3>
+
+        <input class="filter__checkbox" type="checkbox" id="hotel" disabled>
+        <label class="filter__label_checkbox" for="hotel">Гостиница</label>
+
+        <input class="filter__checkbox" type="checkbox" id="motel">
+        <label class="filter__label_checkbox" for="motel">Мотель</label>
+
+        <input class="filter__checkbox" type="checkbox" id="apartment" checked>
+        <label class="filter__label_checkbox" for="apartment">Апартаменты</label>
+      </div>
+
+      <div class="filter__set filter__set_range">
+        <h3 class="filter__heading">Стоимость в сутки (р):</h3>
+        <div class="filter__range-group">
+          <div class="filter__range_manual clearfix">
+            <label class="filter__label filter__label_from">От
+              <input class="filter__input" type="text" value="0">
+            </label>
+
+            <label class="filter__label filter__label_to">До
+              <input class="filter__input" type="text" value="3000">
+            </label>
+          </div>
+
+          <div class="slider">
+            <div class="slider__scale">
+              <div class="slider__bar"></div>
+            </div>
+            <div class="slider__toggle slider__toggle_min"></div>
+            <div class="slider__toggle slider__toggle_max"></div>
+          </div>
+        </div>
+
+        <button class="button button_show-hotels" type="submit">Показать</button>
+      </div>
+    </form>
+
+    <div class="hotels">
+      <div class="hotels-header clearfix">
+        <div class="hotels-header__heading">Найдено:
+          <span id="hotels-header__quantity">3</span>
+        </div>
+
+        <div class="hotels-header__sort">
+          <span class="hotels-header__sort-heading">Сортировка:</span>
+          <span class="hotels-header__option
+                       hotels-header__option_active">По цене</span>
+          <span class="hotels-header__option">По типу</span>
+          <span class="hotels-header__option">По рейтингу</span>
+        </div>
+
+        <div class="hotels-header__arrows">
+          <span class="hotels-header__arrow hotels-header__arrow-up"></span>
+          <span class="hotels-header__arrow hotels-header__arrow-down
+            hotels-header__arrow-down_active"></span>
+        </div>
+      </div>
+
+      <section class="hotel clearfix">
+        <img class="hotel__image" src="img/amada-resort-and-spa.jpg"
+          alt="amada resort and spa" width="135" height="90">
+        <div class="hotel__info">
+          <a class="hotel__link" href="#">
+            <h3 class="hotel__name">Amada resort &amp; spa</h3>
+          </a>
+          <span class="hotel__details">Гостиница</span>
+          <span class="hotel__details">от 3500 р.</span>
+          <div class="hotel__buttons">
+            <a class="button button_hotel button_hotel-details" href="#">Подробнее</a>
+            <a class="button button_hotel button_hotel-book" href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="hotel__rating clearfix">
+          <div class="hotel__stars hotel__stars_four"></div>
+          <span class="hotel__rate">Рейтинг:
+            <span class="hotel__rate-number">8,5</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="hotel clearfix">
+        <img class="hotel__image" src="img/desert-quail-inn.jpg"
+          alt="desert quail inn" width="135" height="90">
+        <div class="hotel__info">
+          <a class="hotel__link" href="#">
+            <h3 class="hotel__name">Desert Quail Inn</h3>
+          </a>
+          <span class="hotel__details">Мотель</span>
+          <span class="hotel__details">от 2000 р.</span>
+          <div class="hotel__buttons">
+            <a class="button button_hotel button_hotel-details" href="#">Подробнее</a>
+            <a class="button button_hotel button_hotel-book" href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="hotel__rating clearfix">
+          <div class="hotel__stars hotel__stars_two"></div>
+          <span class="hotel__rate">Рейтинг:
+            <span class="hotel__rate-number">8,9</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="hotel clearfix">
+        <img class="hotel__image" src="img/villas-at-poco-diablo.jpg"
+          alt="villas at poco diablo" width="135" height="90">
+        <div class="hotel__info">
+          <a class="hotel__link" href="#">
+            <h3 class="hotel__name">Villas at Poco Diablo</h3>
+          </a>
+          <span class="hotel__details">Апартаменты</span>
+          <span class="hotel__details">от 4000 р.</span>
+          <div class="hotel__buttons">
+            <a class="button button_hotel button_hotel-details" href="#">Подробнее</a>
+            <a class="button button_hotel button_hotel-book" href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="hotel__rating clearfix">
+          <div class="hotel__stars hotel__stars_three"></div>
+          <span class="hotel__rate">Рейтинг:
+            <span class="hotel__rate-number">9,2</span>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer footer_normal clearfix">
+      <div class="footer__item">
+        <a class="footer__hashtag"
+          href="https://www.google.com.ua/#q=%23visitsedona">#visitsedona</a>
+      </div>
+
+      <div class="footer__item">
+        <a class="footer__social-network footer__social-network_twitter"
+          href="https://twitter.com/sedonaaz">
+            <i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
+        </a>
+
+        <a class="footer__social-network footer__social-network_facebook"
+          href="https://www.facebook.com/VisitSedona">
+            <i class="fa fa-lg fa-facebook" aria-hidden="true"></i>
+          </a>
+
+        <a class="footer__social-network footer__social-network_youtube"
+          href="https://www.youtube.com/user/sedonatv">
+            <i class="fa fa-lg fa-youtube-play" aria-hidden="true"></i>
+          </a>
+      </div>
+
+      <div class="footer__item">
+        <span class="footer__developer">Website by</span>
+        <a class="footer__developer-link" href="http://www.htmlacademy.ru"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

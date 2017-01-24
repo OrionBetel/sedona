@@ -1,0 +1,80 @@
+.button {
+  border: none;
+  padding: 0 17px;
+  color: #fff;
+  font-family: 'PT Sans', Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button_search {
+  width: 47.333%;
+  font-size: 21px;
+  line-height: 86px;
+  background-color: #766357;
+}
+
+.button_form {
+  width: 100%;
+  font-size: 21px;
+  line-height: 58px;
+  background-color: #81b3d2;
+}
+
+.button_form_hovered:hover {
+  background-color: #669ec0;
+}
+
+.button_form_acive:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.button_show-hotels {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 5.5px 33.5px;
+  font-weight: normal;
+  background-color: transparent;
+  transition: .25s;
+}
+
+.button_show-hotels:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.button__detail {
+  line-height: 27px;
+  background-color: #81b3d2;
+}
+
+.button__detail_hover:hover {
+  background-color: #669ec0;
+}
+
+.button__detail_down:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.button__book {
+  line-height: 27px;
+  background-color: #766357;
+}
+
+.button__book_hover:hover {
+  background-color: #604e43;
+}
+
+.button__book_down:active {
+  color: #928a85;
+  background-color: #503e33;
+}

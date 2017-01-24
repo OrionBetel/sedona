@@ -1,0 +1,106 @@
+.filter {
+  color: #fff;
+  background: url(../images/filter-bg.png) center -56px;
+}
+
+.filter::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.filter__set {
+  float: left;
+  width: 24%;
+  padding-top: 2.32%;
+  padding-bottom: 0.8%;
+}
+
+.filter__heading {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.filter__label_checkbox {
+  position: relative;
+  display: block;
+  margin: 9.861% 0;
+  padding-left: 16.173%;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter__label_checkbox::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 26px;
+  height: 22px;
+  background: url(../images/elements/checkbox.png) no-repeat;
+  content: '';
+}
+
+.filter__checkbox {
+  display: none;
+}
+
+.filter__checkbox:checked + .filter__label_checkbox::before {
+  background: url(../images/elements/checkbox-checked.png);
+}
+
+.filter__checkbox:disabled + .filter__label_checkbox::before {
+  background: url(../images/elements/checbox-disabled.png) no-repeat;
+}
+
+.filter__checkbox:checked:disabled + .filter__label_checkbox::before {
+  background: url(../images/elements/checbox-checked-disabled.png);
+}
+
+.filter__set_range {
+  float: right;
+  width: 30.965%;
+  text-align: center;
+}
+
+.filter__range-group {
+  padding-bottom: 7.645%;
+}
+
+.filter__range-output {
+  margin-top: 3.822%;
+  margin-bottom: 3.058%;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 1.529% 0;
+}
+
+.filter__range-output::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.filter__range-from,
+.filter__range-to {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.filter__range-from {
+  border-right: 1px solid #fff;
+}
+
+.filter__range-to {
+  border-left: 1px solid #fff;
+}
+
+.filter__range-from-output {
+  font-size: 14px;
+  line-height: 21px;
+}

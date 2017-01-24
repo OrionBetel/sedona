@@ -1,0 +1,105 @@
+.hotel {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2.5% 0;
+  background-color: #fefefe;
+}
+
+.hotel__clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.hotel__image {
+  float: left;
+  margin-right: 2.84%;
+}
+
+.hotel__info {
+  float: left;
+}
+
+.hotel__link:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.hotel__link:visited {
+  color: #000;
+}
+
+.hotel__link:hover {
+  color: #81b3d2;
+}
+
+.hotel__link:active {
+  color: #cacaca;
+}
+
+.hotel__name {
+  margin: 0;
+  margin-bottom: 3.1%;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel__type {
+  display: inline-block;
+  width: 45%;
+  color: #000;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel__price {
+  color: #000;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel__buttons {
+  padding-top: 2.72%;
+}
+
+.hotel__rating {
+  float: right;
+}
+
+.hotel__stars {
+  width: 0;
+  margin-left: auto;
+  height: 17px;
+  background-image: url(../images/icons/star.png);
+}
+
+.hotel__stars_one {
+  width: 24px;
+}
+
+.hotel__stars_two {
+  width: 48px;
+}
+
+.hotel__stars_three {
+  width: 72px;
+}
+
+.hotel__stars_four {
+  width: 96px;
+}
+
+.hotel__stars_five {
+  width: 120px;
+}
+
+.hotel__rate {
+  display: inline-block;
+  width: 109px;
+  margin-top: 46px;
+  padding: 3px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
